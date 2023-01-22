@@ -4,7 +4,6 @@ function ObtenerTextoDelUsuario(){
     return textoIngresado;
 }
 
-
 function Encriptar(){
     var textoIngresado = ObtenerTextoDelUsuario();
     var textoEncriptado = textoIngresado.replace(/e/img, "enter");
@@ -26,7 +25,6 @@ function Desencriptar(){
     console.log(textoDesencriptado);
     return textoDesencriptado;
 }
-
 
 { //Ocultar Elementos
 function OcultarImagen(){
