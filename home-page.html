@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Desincriptador ALURA ONE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <img class="logo" src="Imagenes/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+
+        <section class="bloq-izq">
+            <section class="text-input">
+                <textarea  class = "textarea" name="ingresar-texto" cols="30" rows="10"  id="ingresarTexto" autofocus>Ingresa el texto aqui</textarea>
+            </section>
+            <section class="bloq-izq-bottom">
+                <section class="alerta">
+                    <img src="Imagenes/alerta.png" alt="alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </section>
+                <section class="botones">
+                    <section class="boton-encriptar">
+                        <input class="encriptar" type="button" value="Encriptar" id="encriptar">
+                    </section>
+                    <section class="boton-desencriptar">
+                        <input class="desencriptar" type="button" value="Desencriptar" id="desencriptar">
+                    </section>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="bloq-der">
+            <section class="text-result" id ="text-result-default">
+                <img src="Imagenes/Muñeco.png" alt="muñeco" id="img-muneco">
+                <section class="textos-de-resultados" id = "textos-de-resultados">
+                    <div class="texto-mensaje-null">
+                        <p>Ningún mensaje fue encontrado</p>
+                    </div>
+                    <div class="texto-desc">
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </section>
+                <section class= "text-result-encrypted" id ="text-result-encrypted">
+                    <textarea readonly class = "text-encrypted" id= "text-encrypted"></textarea>
+                </section>
+                <section class="boton-copiar">
+                    <input class="copiar" type="button" value="Copiar" id="copiar">
+                </section>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class=nombre>
+            <p> Hecho por: José Luis Garza Espinoza </p>
+        </div>
+    </footer>
+    <script src="encrypt.js"></script>
+</body >
+
+
+</html >
