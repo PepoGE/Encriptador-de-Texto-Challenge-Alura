@@ -74,3 +74,7 @@ function CopiarTexto(){
 document.getElementById("encriptar").onclick = AlternarTextoEncriptado;
 document.getElementById("desencriptar").onclick = AlternarTextoDesencriptado;
 document.getElementById("copiar").onclick = CopiarTexto;
+
+let textArea = document.getElementById("ingresarTexto");
+textArea.focus();
+textArea.selectionStart = textArea.value.length;
