@@ -64,5 +64,13 @@ function AlternarTextoDesencriptado(){
     CambiarTextoDesencriptado();
 }
 
+function CopiarTexto(){
+    let mensajeCopiado = document.getElementById("text-encrypted");
+    mensajeCopiado.select();
+    mensajeCopiado.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(mensajeCopiado.value);
+}
+
 document.getElementById("encriptar").onclick = AlternarTextoEncriptado;
 document.getElementById("desencriptar").onclick = AlternarTextoDesencriptado;
+document.getElementById("copiar").onclick = CopiarTexto;
